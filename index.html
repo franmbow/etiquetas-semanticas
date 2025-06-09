@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bases de datos</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <img
+                src="/src/Sql_data_base_with_logo.svg.png"
+                alt="logo sql"
+                id="sql_img"
+            />
+            <h1>Aprendiendo SQL y bases de datos</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Introduccion">Introduccion</a></li>
+                    <li><a href="#comandos">Comandos SQL</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article id="Introduccion">
+                <h2>Introduccion</h2>
+                <p id="intro">
+                    Una base de datos relacional es un tipo de base de datos la cual sus tablas se encuentran conectadas entre si y requieren de la otra, sus datos se organizan en tablas con filas y columnas. En cada colummna se especifica un tipo de dato y en las filas el valor atribuido.
+                </p>
+            </article>
+            <article id="Comandos">
+                <h2>Comandos Básicos de SQL</h2>
+                <table>
+                    <tr>
+                        <th>Comando</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>SELECT</td>
+                        <td>Seleccionar datos de una tabla</td>
+                    </tr>
+                    <tr>
+                        <td>INSERT INTO</td>
+                        <td>Insertar datos en una tabla</td>
+                    </tr>
+                    <tr>
+                        <td>UPDATE</td>
+                        <td>Actualizar datos en una tabla</td>
+                    </tr>
+                    <tr>
+                        <td>DELETE</td>
+                        <td>Eliminar datos de una tabla</td>
+                    </tr>
+                    <tr>
+                        <td>CREATE</td>
+                        <td>Crea objetos en la base de datos</td>
+                    </tr>
+                    <tr>
+                        <td>ALTER</td>
+                        <td>Modifica la estructura de un objeto existente</td>
+                    </tr>
+                    <tr>
+                        <td>DROP</td>
+                        <td>Elimina objetos de la base de datos</td>
+                    </tr>
+                    <tr>
+                        <td>TRUNCATE</td>
+                        <td>Elimina todas las filas de una tabla de forma mas rapida que DELETE</td>
+                    </tr>
+                </table>
+                <form>
+                    <label>Nombre:</label>
+                    <input type="text" id="nombre"><br><br>
+                    <label>Correo electrónico:</label>
+                    <input type="email" id="mail"><br><br>
+                    <label>Comentarios:</label>
+                    <textarea id="comentarios" rows="1"></textarea><br><br>
+                    <button id="enviar">Enviar</button>
+                </form>
+
+            </article>
+        </main>
+        <footer>
+            <p id="foot">© 2024 - Blog creado por Abdala</p>
+        </footer>
+    </body>
+</html>
